@@ -1,0 +1,15 @@
+# env variables
+.env
+
+# virtual environment
+venv
+.venv
+pyvenv.vfg
+
+# python
+__pycache__
+.egg-info
+
+# files
+.ipynb
+vercel_dev.json
