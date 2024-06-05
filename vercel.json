@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "fin_predict_api/wsgi.py",
+      "use": "@ardnt/vercel-python-wsgi"
+    }
+  ],
+  "routes": [
+    {
+        "src": "/(.*)",
+        "dest": "fin_predict_api/wsgi.py"
+    }
+  ]
+}

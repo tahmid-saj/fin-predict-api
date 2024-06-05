@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qsw=jyj6l)c-my-ijp#-ep&5^iolhz@)hxe3cc6&h$_=5x0c03
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app']
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'fin_predict_api.wsgi.application'
+WSGI_APPLICATION = 'fin_predict_api.wsgi.app'
 
 
 # Database

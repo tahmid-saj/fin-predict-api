@@ -13,3 +13,4 @@ __pycache__
 # files
 .ipynb
 vercel_dev.json
+.sqlite3
