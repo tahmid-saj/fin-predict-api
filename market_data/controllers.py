@@ -3,7 +3,6 @@ from utils.constants.market_data_constants import (
 from utils.api_requests.market_data_requests import request_market_data
 
 def get_market_data(request):
-  print(request.data)
   request = request.data
   
   request_fields = {

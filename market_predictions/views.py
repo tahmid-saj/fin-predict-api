@@ -14,10 +14,7 @@ class MarketPredictionsGenerateDaily(APIView):
   permission_classes = [AdminOrReadOnly]
 
   def get(self, request):
-    print("getting")
     response = get_market_predictions_daily(request=request)
-    
-    print(response)
     
     return Response(data=response)
 
@@ -25,9 +22,6 @@ class MarketPredictionsGenerateTwoWeeks(APIView):
   permission_classes = [AdminOrReadOnly]
   
   def get(self, request):
-    print("getting")
     response = get_market_predictions_two_weeks(request=request)
-    
-    print(response)
     
     return Response(data=response)
