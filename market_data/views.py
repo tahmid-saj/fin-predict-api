@@ -11,7 +11,7 @@ from market_data.controllers import get_market_data
 # Create your views here.
 
 class MarketDataGenerate(APIView):
-  permission_classes = [AdminOrReadOnly]
+  # permission_classes = [AdminOrReadOnly]
   
   def post(self, request):
     response = get_market_data(request=request)

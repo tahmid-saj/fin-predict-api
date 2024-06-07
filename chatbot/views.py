@@ -11,7 +11,7 @@ from chatbot.controllers import get_chatbot_response
 # Create your views here.
 
 class ChatbotGenerateResponse(APIView):
-  permission_classes = [AdminOrReadOnly]
+  # permission_classes = [AdminOrReadOnly]
   
   def post(self, request):
     response = get_chatbot_response(request=request)
