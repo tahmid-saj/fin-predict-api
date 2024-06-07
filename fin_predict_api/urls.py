@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('market_data/', include('market_data.urls')),
     path('market_predictions/', include('market_predictions.urls')),
-    # path('chatbot/', include('chatbot.urls'))
+    path('chatbot/', include('chatbot.urls'))
 ]
