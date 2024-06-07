@@ -4,7 +4,7 @@
       "src": "fin_predict_api/wsgi.py",
       "use": "@vercel/python",
       "config": {
-        "runtime": "python3.12" 
+        "runtime": "python" 
       }
     }
   ],
