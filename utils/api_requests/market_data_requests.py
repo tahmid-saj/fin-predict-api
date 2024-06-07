@@ -10,7 +10,6 @@ load_dotenv()
 polygon_client = RESTClient(api_key=os.getenv("POLYGON_API_KEY"))
 
 def request_market_data(request):
-  print(request)
   
   response_aggregates = []
   for aggregate in polygon_client.list_aggs(

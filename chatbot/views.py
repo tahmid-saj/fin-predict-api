@@ -14,9 +14,6 @@ class ChatbotGenerateResponse(APIView):
   permission_classes = [AdminOrReadOnly]
   
   def post(self, request):
-    print("getting")
     response = get_chatbot_response(request=request)
-    
-    print(response)
     
     return Response(data=response)

@@ -14,9 +14,6 @@ class MarketDataGenerate(APIView):
   permission_classes = [AdminOrReadOnly]
   
   def post(self, request):
-    print("getting")
     response = get_market_data(request=request)
-    
-    print(response)
     
     return Response(data=response)
