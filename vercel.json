@@ -3,7 +3,11 @@
     {
       "src": "fin_predict_api/wsgi.py",
       "use": "@vercel/python",
+<<<<<<< HEAD
       "config": { 
+=======
+      "config": {
+>>>>>>> 9b75e5431ec1aca59d2392af52c12649eef2515b
         "runtime": "python" 
       }
     }
