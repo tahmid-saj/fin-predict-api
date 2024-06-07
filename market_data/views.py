@@ -13,7 +13,7 @@ from market_data.controllers import get_market_data
 class MarketDataGenerate(APIView):
   permission_classes = [AdminOrReadOnly]
   
-  def get(self, request):
+  def post(self, request):
     print("getting")
     response = get_market_data(request=request)
     

@@ -6,8 +6,6 @@ def get_market_data(request):
   print(request.data)
   request = request.data
   
-  print("21")
-  
   request_fields = {
     "category": request["category"],
     "ticker": request["ticker"],
