@@ -3,8 +3,7 @@
     {
       "src": "fin_predict_api/wsgi.py",
       "use": "@vercel/python",
-      "config": { 
-        "maxLambdaSize": "15mb", 
+      "config": {
         "runtime": "python3.12" 
       }
     }
