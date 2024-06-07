@@ -4,7 +4,11 @@ def get_market_predictions_daily(request):
   
   closing_price = request_market_predictions_daily()
   
-  return closing_price
+  reponse = {
+    "closingPrice": str(closing_price)
+  }
+  
+  return reponse
 
 def get_market_predictions_two_weeks(request):
   
