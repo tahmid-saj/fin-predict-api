@@ -11,7 +11,7 @@ from market_predictions.controllers import get_market_predictions_daily, get_mar
 # Create your views here.
 
 class MarketPredictionsGenerateDaily(APIView):
-  permission_classes = [AdminOrReadOnly]
+  # permission_classes = [AdminOrReadOnly]
 
   def get(self, request):
     response = get_market_predictions_daily(request=request)
@@ -19,7 +19,7 @@ class MarketPredictionsGenerateDaily(APIView):
     return Response(data=response)
 
 class MarketPredictionsGenerateTwoWeeks(APIView):
-  permission_classes = [AdminOrReadOnly]
+  # permission_classes = [AdminOrReadOnly]
   
   def get(self, request):
     response = get_market_predictions_two_weeks(request=request)
