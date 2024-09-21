@@ -21,7 +21,7 @@ def request_market_predictions_daily():
   # close connection
   close_mongodb_connection(mongodb_client_connection)
   
-  return closing_price[0]
+  return round(closing_price[0], 2)
 
 def request_market_predictions_two_weeks():
   # create connection
